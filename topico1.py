@@ -6,7 +6,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
 
-# Exemplo: dataset tabular (pode usar o clientes_churn.csv da U1A4)
+# Exemplo: dataset tabular (pode usar o clientes_churn.csv)
 df = pd.read_csv("clientes_churn.csv")
 y = df["churn"].astype(int)
 X = df.drop(columns=["churn"])
